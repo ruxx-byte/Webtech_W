@@ -1,0 +1,88 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #eef2f5;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  width: 360px;
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  border-color: #0084ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 132, 255, 0.3);
+}
+
+.radio-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0084ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #006fd1;
+}
+
+@media (max-width: 420px) {
+  .form-container {
+    width: 90%;
+    padding: 25px;
+  }
+}
