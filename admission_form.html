@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            background: #1a237e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        form {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid #1a237e;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #1a237e;
+            font-size: 1.1em;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 95%;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #888;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background: #1a237e;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background: #c62828;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>University Admission Form</h1>
+
+<form>
+
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <label>Full Name:</label>
+    <input type="text" name="fullname" maxlength="50" required>
+
+    <label>Email Address:</label>
+    <input type="email" name="email" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+
+    <br><br>
+
+    <label>Interests:</label><br>
+    <input type="checkbox" name="interest" value="Sports"> Sports
+    <input type="checkbox" name="interest" value="Music"> Music
+    <input type="checkbox" name="interest" value="Technology"> Technology
+    <input type="checkbox" name="interest" value="Debate"> Debate
+</fieldset>
+
+<fieldset>
+    <legend>Academic Information</legend>
+
+    <label>Last Completed Degree:</label>
+    <input type="text" name="degree" maxlength="40" required>
+
+    <label>Institution Name:</label>
+    <input type="text" name="institution" maxlength="60" required>
+
+    <label>Passing Year:</label>
+    <input type="date" name="passing_year" required>
+
+    <label>Preferred Department:</label>
+    <select name="department" required>
+        <option value="">Select Department</option>
+        <option>Computer Science & Engineering</option>
+        <option>Electrical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Business Administration</option>
+        <option>English</option>
+        <option>Economics</option>
+    </select>
+
+</fieldset>
+
+<fieldset>
+    <legend>Required Documents</legend>
+
+    <label>Upload Your Photograph:</label>
+    <input type="file" name="photo" required>
+
+    <label>Upload Academic Transcript:</label>
+    <input type="file" name="transcript" required>
+
+</fieldset>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
